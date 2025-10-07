@@ -1,6 +1,6 @@
 public record User(Guid Id, string UserName, string PasswordHash, DateTimeOffset CreatedAt);
 
-public record Lobby(Guid Id, Guid Owner, string Status);
+public record Lobby(Guid Id, Guid Owner, string Name, string Status);
 
 public record LobbyMember(Guid LobbyId, Guid UserId, DateTimeOffset JointedAt);
 
